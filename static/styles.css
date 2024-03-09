@@ -1,0 +1,130 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+    padding: 30px;
+}
+
+.container {
+    text-align: center;
+}
+
+.calculator {
+    padding: 10px;
+    border-radius: 1em;
+    height: 550px;
+    width: 400px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: #191b28;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.calculator .btn-outline-danger {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.calculator .btn-outline-danger.disabled, .btn-outline-danger:disabled {
+    color: #dc3545;
+    background-color: transparent;
+}
+
+.calculator .btn-outline-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-outline-primary.disabled, .btn-outline-primary:disabled {
+    color: #007bff;
+    background-color: transparent;
+}
+
+#button-group {
+    width: 100%;
+    height: 85%;
+}
+
+.row {
+    height: 12%;
+    margin: 15px;
+}
+
+.col-sm, .col-sm-9 {
+    padding: 0;
+}
+
+.display-box {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #dcdbe1;
+    border: solid black 0.5px;
+    color: black;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    margin-left: 5px;
+}
+
+button[type=button] {
+    width: 45%;
+    height: 100%;
+    text-align: center;
+}
+
+input[class=button] {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #64278f;
+    color: white;
+    border: solid black 0.5px;
+    width: 80%;
+    border-radius: 50px;
+    height: 90%;
+    outline: none;
+}
+
+input:active[class=button] {
+    background: #e5e5e5;
+    -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+    -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+    box-shadow: inset 0px 0px 5px #c1c1c1;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.player-display {
+    display: flex;
+    gap: 15px;
+    margin-top: 50px;
+}
+  
+.player-display label {
+    flex: 1 1 auto;
+    cursor: pointer;
+}
+  
+.player-display span {
+    background-color: #8e95a2;
+    padding: 15px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 10px;
+}
+  
+.player-display input {
+    display: none;
+}
+  
+.player-display input:checked + span {
+    background-color: blue;
+    color: white;
+}
